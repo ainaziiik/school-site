@@ -11,9 +11,7 @@ st.set_page_config(
 )
 
 # CSS
-with open("./green_school_site/style.css") as f:git add .
-git commit -m "fix css path"
-git push
+with open("style.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # Navbar

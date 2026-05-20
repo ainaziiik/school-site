@@ -1,0 +1,100 @@
+/* Background */
+
+.stApp {
+    background: linear-gradient(135deg, #f4f8f2, #dce9de);
+    color: #2F3E34;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+
+.navbar {
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(12px);
+    padding: 15px 30px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+}
+
+/* Hero */
+
+.hero {
+    height: 500px;
+    background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1');
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+    color: white;
+}
+
+/* Glass effect */
+
+.glass {
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(12px);
+    border-radius: 25px;
+    padding: 25px;
+    margin: 10px 0;
+    box-shadow:
+        8px 8px 16px rgba(0,0,0,0.08),
+        -8px -8px 16px rgba(255,255,255,0.4);
+    transition: 0.3s ease;
+}
+
+/* Hover animation */
+
+.glass:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+/* Cards */
+
+.card {
+    min-height: 220px;
+}
+
+/* Teacher cards */
+
+.teacher-card {
+    text-align: center;
+}
+
+/* Contacts */
+
+.contact {
+    padding: 30px;
+}
+
+/* Floating animation */
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.card {
+    animation: float 4s ease-in-out infinite;
+}
