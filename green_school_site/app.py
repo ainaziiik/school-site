@@ -21,13 +21,29 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# Hero Section
+# HERO SECTION
+
 st.markdown("""
 <div class="hero">
-    <div class="overlay">
-        <h1>Кыздар мектеби</h1>
-        <p>Билим • Тарбия • Келечек</p>
+
+    <div class="hero-content">
+
+        <div class="glass hero-box">
+
+            <h1>Кыздар мектеби</h1>
+
+            <p>
+                Билим • Тарбия • Келечек
+            </p>
+
+            <button class="hero-btn">
+                Көбүрөөк көрүү
+            </button>
+
+        </div>
+
     </div>
+
 </div>
 """, unsafe_allow_html=True)
 
@@ -37,7 +53,7 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.markdown("""
     <div class="glass card">
-        <h3>🏆 Жетишкендиктер</h3>
+        <h3> Жетишкендиктер</h3>
         <p>Олимпиада жана сынак жеңүүчүлөрү.</p>
     </div>
     """, unsafe_allow_html=True)
@@ -45,7 +61,7 @@ with col1:
 with col2:
     st.markdown("""
     <div class="glass card">
-        <h3>📰 Жаңылыктар</h3>
+        <h3> Жаңылыктар</h3>
         <p>Мектептеги акыркы жаңылыктар.</p>
     </div>
     """, unsafe_allow_html=True)
@@ -53,13 +69,13 @@ with col2:
 with col3:
     st.markdown("""
     <div class="glass card">
-        <h3>🎨 Ийримдер</h3>
+        <h3> Ийримдер</h3>
         <p>Кошумча өнүгүү мүмкүнчүлүктөрү.</p>
     </div>
     """, unsafe_allow_html=True)
 
 # Gallery
-st.markdown("## 📸 Галерея")
+st.markdown("##  Галерея")
 
 gallery1, gallery2, gallery3 = st.columns(3)
 
@@ -73,7 +89,7 @@ with gallery3:
     st.image("./green_school_site/images/school3.jpg")
 
 # Teachers
-st.markdown("## 👩‍🏫 Мугалимдер")
+st.markdown("##  Мугалимдер")
 
 t1, t2, t3 = st.columns(3)
 
@@ -102,7 +118,7 @@ with t3:
     """, unsafe_allow_html=True)
 
 # Contacts
-st.markdown("## 📍 Байланыш")
+st.markdown("##  Байланыш")
 
 st.markdown("""
 <div class="glass contact">

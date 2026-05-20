@@ -19,26 +19,147 @@
 
 /* Hero */
 
+/* ===== HERO PREMIUM ===== */
+
 .hero {
-    height: 500px;
-    background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1');
+    position: relative;
+
+    height: 92vh;
+
+    border-radius: 40px;
+
+    overflow: hidden;
+
+    background-image:
+        linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.35)),
+        url('https://images.unsplash.com/photo-1509062522246-3755977927d7');
+
     background-size: cover;
     background-position: center;
-    border-radius: 30px;
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 40px;
+
+    margin-bottom: 50px;
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,0.15);
+
+    animation: zoomHero 12s ease-in-out infinite alternate;
 }
 
-.overlay {
+@keyframes zoomHero {
+    0% {
+        background-size: 100%;
+    }
+
+    100% {
+        background-size: 110%;
+    }
+}
+
+/* ===== HERO CONTENT ===== */
+
+.hero-content {
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.3);
+
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    padding-left: 60px;
+    align-items: center;
+}
+
+/* ===== HERO BOX ===== */
+
+.hero-box {
+    width: 650px;
+
+    text-align: center;
+
+    padding: 60px;
+
+    border-radius: 35px;
+
+    background: rgba(255,255,255,0.18);
+
+    backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255,255,255,0.25);
+
+    animation: floatHero 5s ease-in-out infinite;
+}
+
+@keyframes floatHero {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* ===== HERO TEXT ===== */
+
+.hero-box h1 {
+
+    font-size: 72px;
+
     color: white;
+
+    margin-bottom: 20px;
+
+    font-weight: 700;
+
+    text-shadow:
+        0 5px 20px rgba(0,0,0,0.2);
+}
+
+.hero-box p {
+
+    font-size: 24px;
+
+    color: rgba(255,255,255,0.92);
+
+    margin-bottom: 35px;
+}
+
+/* ===== BUTTON ===== */
+
+.hero-btn {
+
+    padding: 15px 40px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    background: linear-gradient(
+        135deg,
+        #7FA98F,
+        #A7C4A0
+    );
+
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: 0.4s ease;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.15);
+}
+
+.hero-btn:hover {
+
+    transform: scale(1.08);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.2);
 }
 
 /* Glass effect */
