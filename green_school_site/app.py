@@ -11,7 +11,9 @@ st.set_page_config(
 )
 
 # CSS
-with open("./green_school_site/style.css") as f:
+with open("./green_school_site/style.css") as f:git add .
+git commit -m "fix css path"
+git push
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # Navbar
@@ -64,13 +66,13 @@ st.markdown("## 📸 Галерея")
 gallery1, gallery2, gallery3 = st.columns(3)
 
 with gallery1:
-    st.image("images/school1.jpg")
+    st.image("./green_school_site/images/school1.jpg")
 
 with gallery2:
-    st.image("images/school2.jpg")
+    st.image("./green_school_site/images/school2.jpg")
 
 with gallery3:
-    st.image("images/school3.jpg")
+    st.image("./green_school_site/images/school3.jpg")
 
 # Teachers
 st.markdown("## 👩‍🏫 Мугалимдер")
